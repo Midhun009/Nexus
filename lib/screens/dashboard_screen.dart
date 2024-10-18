@@ -216,13 +216,7 @@
           url: 'https://acenexus.in/contact.php',
           color: Colors.green.shade800,
         ),
-        DashboardItem(
-          title: "Instagram",
-          subtitle: "",
-          icon: FontAwesomeIcons.instagram,
-          url: 'https://www.instagram.com/acenexus.in/',
-          color: Colors.pink.shade800,
-        ),
+       
         DashboardItem(
           title: "WhatsApp",
           subtitle: "",
@@ -364,8 +358,7 @@
           // Handle URLs with http or https
           if (item.title == 'Youtube Channel') {
             _openExternalApp(item.url); // Open YouTube in the external app
-          } else if (item.title == 'Instagram') {
-            _openExternalApp(item.url); // Open Instagram in the external app
+          
           } else {
             _openWebView(context, item.url); // Open other URLs in WebView
           }
